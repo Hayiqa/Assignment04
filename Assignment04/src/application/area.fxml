@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="333.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.area">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="41.0" layoutX="-6.0" layoutY="-17.0" stroke="BLACK" strokeType="INSIDE" width="344.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.2505263090133667" green="0.2679298222064972" blue="0.28421053290367126" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fitHeight="26.0" fitWidth="21.0" layoutX="23.0" layoutY="35.0" onMouseClicked="#switchToScene1" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/arrow.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="135.0" layoutY="24.0" prefHeight="46.0" prefWidth="89.0" text="Area" textFill="#c9c6c6">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="102.0" prefHeight="41.0" prefWidth="89.0" text="Lenght" textFill="#e1dcdc">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="152.0" prefHeight="41.0" prefWidth="89.0" text="Width" textFill="#e1dcdc">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="myTextField" alignment="CENTER" layoutX="201.0" layoutY="108.0" prefHeight="30.0" prefWidth="105.0" promptText="Enter Lenght">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="myTextField1" alignment="CENTER" layoutX="201.0" layoutY="157.0" prefHeight="30.0" prefWidth="105.0" promptText="Enter Width">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="myButton" layoutX="33.0" layoutY="213.0" mnemonicParsing="false" onAction="#displable" prefHeight="24.0" prefWidth="273.0" stylesheets="@1.css" text="Submit">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Button>
+      <Line endX="176.0" endY="0.70001220703125" layoutX="130.0" layoutY="285.0" startX="-100.0" stroke="#f2eaea" />
+      <Line endX="-115.49998474121094" endY="164.60000610351562" layoutX="145.0" layoutY="340.0" startX="-115.49998474121094" startY="-54.5" stroke="#f2eaea" />
+      <Line endX="171.79998779296875" layoutX="134.0" layoutY="505.0" startX="-104.99998474121094" startY="0.100006103515625" stroke="#f2eaea" />
+      <Line endX="-110.5" endY="164.60000610351562" layoutX="416.0" layoutY="340.0" startX="-110.5" startY="-53.79998779296875" stroke="#f2eaea" />
+      <Label fx:id="myLabel" layoutX="74.0" layoutY="361.0" prefHeight="69.0" prefWidth="191.0" textFill="#e4dada">
+         <font>
+            <Font size="47.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="169.0" layoutY="434.0" startX="-100.0" stroke="#968a8a" strokeWidth="3.0" />
+      <Label alignment="CENTER" layoutX="37.0" layoutY="302.0" prefHeight="46.0" prefWidth="89.0" text="Area" textFill="#c9c6c6">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+              </children>
+</Pane>
